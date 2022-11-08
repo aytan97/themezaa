@@ -1,0 +1,129 @@
+/* home section styles */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.01em;
+    font-size: 13px;
+    font-weight: 500;
+    width: 100%;
+    height: 100vh;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url("../images/restaurant-slider-01.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    font-size: 12px;
+}
+
+#home:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home-navbar {
+    padding: 30px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.home-navbar-nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home-navbar-nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 0px 20px;
+    font-weight: 500;
+}
+
+.home-navbar-nav ul li:last-child a {
+    background-color: #f5ab35;
+    padding: 5px 20px;
+    color: black;
+}
+
+/* home lider styles */
+
+.home-slider {
+    height: calc(100%-105px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home-slider-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+}
+
+.home-slider-item-controls {
+    width: inherit;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px 100px;
+    box-sizing: border-box;
+}
+
+.home-slider-item-controls a {
+    color: white;
+    font-size: 3em;
+}
+
+.home-slider-item-content {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50% -50%);
+    text-align: center;
+}
+
+.home-slider-item-content h1 {
+    font-size: 8em;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #f5ab35;
+
+}
+
+.home-slider-item-content p {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #bfbfbf;
+    margin-bottom: 40px;
+    line-height: 1.4em;
+}
+
+.home-slider-pagination {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.home-slider-pagination a {
+    color: white;
+    font-size: 1.2em;
+    margin: 0px 5px;
+}
